@@ -1,0 +1,8 @@
+node_modules/
+pages-dist/
+.wrangler/
+backend/node_modules/
+backend/.wrangler/
+.dev.vars*
+.env*
+.DS_Store

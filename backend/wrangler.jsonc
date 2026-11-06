@@ -1,0 +1,14 @@
+{
+  "name": "sumline-api",
+  "main": "index.js",
+  "compatibility_date": "2026-11-06",
+  "vars": {
+    "ALLOWED_ORIGINS": "https://YOUR-USERNAME.github.io"
+  },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "sumline",
+    "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID",
+    "migrations_dir": "migrations"
+  }]
+}
