@@ -3,12 +3,14 @@
   "main": "index.js",
   "compatibility_date": "2026-11-06",
   "vars": {
-    "ALLOWED_ORIGINS": "https://YOUR-USERNAME.github.io"
+    "ALLOWED_ORIGINS": "https://jacktriton.github.io"
   },
-  "d1_databases": [{
-    "binding": "DB",
-    "database_name": "sumline",
-    "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID",
-    "migrations_dir": "migrations"
-  }]
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "sumline",
+      "database_id": "facf4e48-7a49-4520-b736-780221a7f4ae",
+      "migrations_dir": "migrations"
+    }
+  ]
 }
