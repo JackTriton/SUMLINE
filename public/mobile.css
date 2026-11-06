@@ -1,4 +1,9 @@
 /* Touch controls and responsive layouts. */
+.language-select{max-width:160px;min-width:0;min-height:36px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--text);padding:7px 9px;font-size:12px}
+.language-card{margin-bottom:20px}.language-card .field{max-width:400px;margin-bottom:8px}.language-card .language-select{max-width:100%;width:100%}
+html[lang=en] .side-tip{line-height:1.7}html[lang=en] .btn{overflow-wrap:anywhere}html[lang=en] .game-foot .legend{flex-wrap:wrap}html[lang=en] .hero-label{max-width:200px;line-height:1.6}
+@media(max-width:768px){.top-actions .language-select{width:110px;max-width:110px;min-height:44px;font-size:16px}.language-card .language-select{min-height:46px;font-size:16px}.top-actions{flex-shrink:0}}
+@media(max-width:600px){.topbar .breadcrumb>:not(:first-child){display:none}.topbar .status{display:none}}
 html{scroll-padding-bottom:90px}body{min-height:100svh}.shell{min-height:100svh}
 .main,.game-layout>div,.game-card,.form-layout>*,.settings-grid>*,.card,.field,.rank-meta>*{min-width:0}
 .board-scroll{max-width:100%;width:100%;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;scroll-padding-left:40px;padding:4px 2px 8px;-webkit-overflow-scrolling:touch}

@@ -1,7 +1,7 @@
 const BASE=new URL(self.registration.scope);
 const PREFIX='sumline-cache:'+BASE.pathname+':';
-const CACHE=PREFIX+'1.3';
-const ASSETS=['index.html','offline.html','app.js','config.js','runtime.js','input.js','style.css','mobile.css','engine.js','generator-worker.js','favicon.svg'].map(p=>new URL(p,BASE).href);
+const CACHE=PREFIX+'1.4';
+const ASSETS=['index.html','offline.html','app.js','i18n.js','messages.js','config.js','runtime.js','input.js','style.css','mobile.css','engine.js','generator-worker.js','favicon.svg'].map(p=>new URL(p,BASE).href);
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith(PREFIX)&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
 self.addEventListener('fetch',event=>{

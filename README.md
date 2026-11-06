@@ -1,4 +1,10 @@
-# SUMLINE v1.3
+# SUMLINE v1.4 — 日本語 / English
+
+[English guide](README.en.md) · [多言語対応について](docs/LANGUAGES.md)
+
+日本語・英語を画面上部または設定で切り替えられます。Pages公開ワークフローの修正も含みます。
+
+## SUMLINE
 
 行と列の残り合計をすべて0にする数字選択パズルです。画面・音・盤面生成はHTML/CSS/JavaScriptで動き、オンライン記録には任意の共有APIを接続できます。
 
